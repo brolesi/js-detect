@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" id="refresh-no-js" content="0; url=detect.php?js=false">
+
+  <title>Detecting JS...</title>
+</head>
+<body>
+	<script>
+    var element = document.getElementById("refresh-no-js");
+    element.parentNode.removeChild(element);
+    document.cookie = "js=true; path=/";
+    location.href='detect.php?js=true';
+  </script>
+</body>
+</html>
